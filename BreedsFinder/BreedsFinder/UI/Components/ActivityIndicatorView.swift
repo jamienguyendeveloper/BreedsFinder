@@ -10,7 +10,9 @@ import SwiftUI
 struct ActivityIndicatorView: UIViewRepresentable {
 
     func makeUIView(context: UIViewRepresentableContext<ActivityIndicatorView>) -> UIActivityIndicatorView {
-        return UIActivityIndicatorView(style: .large)
+        let activityIndicatorView = UIActivityIndicatorView(style: .large)
+        activityIndicatorView.color = .white
+        return activityIndicatorView
     }
 
     func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<ActivityIndicatorView>) {

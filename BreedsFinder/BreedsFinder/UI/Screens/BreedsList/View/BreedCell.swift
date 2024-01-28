@@ -11,40 +11,57 @@ import Models
 struct BreedCell: View {
     
     let breed: Breed
-    let imageSize: CGFloat = 100
     var body: some View {
-        HStack {
-            
+        VStack {
             if let imageUrl = breed.imageUrl,
                let url = URL(string: imageUrl) {
                 AsyncImage(url: url) { phase in
                     if let image = phase.image {
                         image.resizable()
-                            .scaledToFill()
-                            .frame(width: imageSize, height: imageSize)
+                            .scaledToFit()
                             .clipped()
                         
                      } else if phase.error != nil {
-                         
                          Text(phase.error?.localizedDescription ?? "error")
                              .foregroundColor(Color.pink)
-                             .frame(width: imageSize, height: imageSize)
+                             .padding().padding(.top, 20)
                      } else {
-                        ProgressView()
-                             .frame(width: imageSize, height: imageSize)
+                         AnyView(ActivityIndicatorView().padding().padding(.top, 20))
                      }
                     
                 }
-            }else {
-                Color.gray.frame(width: imageSize, height: imageSize)
+            } else {
+                ZStack {
+                    Color.gray.frame(height: 200)
+                    Text("Image not found")
+                        .font(Fonts.regular(20))
+                        .foregroundColor(.white)
+                }
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text(breed.name)
-                    .font(.headline)
-                Text(breed.temperament)
+                HStack {
+                    Text(breed.name)
+                        .font(Fonts.bold(22))
+                        .foregroundColor(Color.white)
+                        .padding(.top, 20)
+                        .padding(.leading, 20)
+                    Spacer()
+                }
+                HStack {
+                    Text(breed.temperament)
+                        .multilineTextAlignment(.leading)
+                        .font(Fonts.regular(16))
+                        .foregroundColor(Color.white)
+                        .padding(.top, 10)
+                        .padding(.leading, 20)
+                        .padding(.bottom, 20)
+                    Spacer()
+                }
             }
-        }
+            Spacer()
+        }.background(Colors.background)
+            .cornerRadius(20)
      
     }
 }

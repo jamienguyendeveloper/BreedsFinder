@@ -15,7 +15,7 @@ struct RootViewAppearance: ViewModifier {
     internal let inspection = Inspection<Self>()
     
     func body(content: Content) -> some View {
-        content.ignoresSafeArea().onReceive(inspection.notice) {
+        content.onReceive(inspection.notice) {
             self.inspection.visit(self, $0)
         }
     }

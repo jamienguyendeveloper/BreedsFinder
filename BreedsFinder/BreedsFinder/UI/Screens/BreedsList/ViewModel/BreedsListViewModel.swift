@@ -12,20 +12,13 @@ import Models
 
 // MARK: Search
 
-extension BreedsListView {
-    struct BreedsSearch {
-        var searchText: String = ""
-        var keyboardHeight: CGFloat = 0
-    }
-}
-
 // MARK: ViewModel
 
 extension BreedsListView {
     class ViewModel: ObservableObject {
         
         // State
-        @Published var breedsSearch = BreedsSearch()
+        @Published var searchText: String = ""
         @Published var breeds: Requestable<RequestableList<Breed>>
         @Published var selectedBreed: Breed? = nil
         
@@ -43,7 +36,7 @@ extension BreedsListView {
         func reloadBreeds() {
             container.services.breedsService
                 .load(breeds: requestableSubject(\.breeds),
-                      search: breedsSearch.searchText)
+                      search: searchText)
         }
     }
 }

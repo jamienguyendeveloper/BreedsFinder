@@ -26,8 +26,6 @@
 		7D1A989F2B610629008C674A /* RemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98802B610628008C674A /* RemoteRepositoryTests.swift */; };
 		7D1A98A02B610629008C674A /* BreedsRemoteRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98812B610628008C674A /* BreedsRemoteRepositoryTests.swift */; };
 		7D1A98A12B610629008C674A /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98842B610628008C674A /* CoreDataStackTests.swift */; };
-		7D1A98A22B610629008C674A /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98862B610628008C674A /* AppDelegateTests.swift */; };
-		7D1A98A32B610629008C674A /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98872B610628008C674A /* SceneDelegateTests.swift */; };
 		7D1A98A42B610629008C674A /* RequestableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98892B610628008C674A /* RequestableTests.swift */; };
 		7D1A98A52B610629008C674A /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A988A2B610628008C674A /* HelpersTests.swift */; };
 		7D1A98A62B610629008C674A /* RequestableListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A988B2B610628008C674A /* RequestableListTests.swift */; };
@@ -35,8 +33,6 @@
 		7D1A98A82B610629008C674A /* BreedsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A988E2B610628008C674A /* BreedsServiceTests.swift */; };
 		7D1A98B02B610A70008C674A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1A98AF2B610A70008C674A /* Preview Assets.xcassets */; };
 		7D27BD0A2B60E84800F67DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D27BD092B60E84800F67DEA /* Assets.xcassets */; };
-		7D27BD372B60E8DE00F67DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD362B60E8DE00F67DEA /* AppDelegate.swift */; };
-		7D27BD392B60E97500F67DEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD382B60E97500F67DEA /* SceneDelegate.swift */; };
 		7D27BD3B2B60E98500F67DEA /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD3A2B60E98500F67DEA /* AppEnvironment.swift */; };
 		7D27BD5C2B60EAB700F67DEA /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD5B2B60EAB700F67DEA /* DIContainer.swift */; };
 		7D27BD8E2B60ED2100F67DEA /* RootViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD8D2B60ED2100F67DEA /* RootViewAppearance.swift */; };
@@ -57,6 +53,34 @@
 		7DE377B82B66458000D84B1F /* Inspectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377B72B66458000D84B1F /* Inspectation.swift */; };
 		7DE377C32B66550500D84B1F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 7DE377C22B66550500D84B1F /* ViewInspector */; };
 		7DE377C62B66566900D84B1F /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = 7DE377C52B66566900D84B1F /* Infrastructure */; };
+		7DE377CC2B668D8300D84B1F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */; };
+		7DE377CD2B668D8300D84B1F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */; };
+		7DE377CE2B668D8300D84B1F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */; };
+		7DE377D22B668EEB00D84B1F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D12B668EEB00D84B1F /* Strings.swift */; };
+		7DE377D42B668F1200D84B1F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D32B668F1200D84B1F /* Fonts.swift */; };
+		7DE377D62B668FCE00D84B1F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D52B668FCE00D84B1F /* Colors.swift */; };
+		7DE377DB2B66901700D84B1F /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377DA2B66901700D84B1F /* Color+Ext.swift */; };
+		7DE377E12B66CCED00D84B1F /* BreedsFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377E02B66CCED00D84B1F /* BreedsFinderApp.swift */; };
+		7DE377F52B66D0E300D84B1F /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E32B66D0E000D84B1F /* WorkSans-Medium.ttf */; };
+		7DE377F62B66D0E300D84B1F /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E42B66D0E100D84B1F /* WorkSans-Regular.ttf */; };
+		7DE377F72B66D0E300D84B1F /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E52B66D0E100D84B1F /* WorkSans-Black.ttf */; };
+		7DE377F82B66D0E300D84B1F /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E62B66D0E100D84B1F /* WorkSans-Bold.ttf */; };
+		7DE377F92B66D0E300D84B1F /* WorkSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E72B66D0E100D84B1F /* WorkSans-ExtraLightItalic.ttf */; };
+		7DE377FA2B66D0E300D84B1F /* WorkSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E82B66D0E100D84B1F /* WorkSans-MediumItalic.ttf */; };
+		7DE377FB2B66D0E300D84B1F /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377E92B66D0E100D84B1F /* WorkSans-Thin.ttf */; };
+		7DE377FC2B66D0E300D84B1F /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377EA2B66D0E100D84B1F /* WorkSans-Light.ttf */; };
+		7DE377FD2B66D0E300D84B1F /* WorkSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377EB2B66D0E100D84B1F /* WorkSans-SemiBoldItalic.ttf */; };
+		7DE377FE2B66D0E300D84B1F /* WorkSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377EC2B66D0E200D84B1F /* WorkSans-BlackItalic.ttf */; };
+		7DE377FF2B66D0E300D84B1F /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377ED2B66D0E200D84B1F /* WorkSans-ExtraBold.ttf */; };
+		7DE378002B66D0E300D84B1F /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377EE2B66D0E200D84B1F /* WorkSans-LightItalic.ttf */; };
+		7DE378012B66D0E300D84B1F /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377EF2B66D0E200D84B1F /* WorkSans-Italic.ttf */; };
+		7DE378022B66D0E300D84B1F /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377F02B66D0E200D84B1F /* WorkSans-SemiBold.ttf */; };
+		7DE378032B66D0E300D84B1F /* WorkSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377F12B66D0E300D84B1F /* WorkSans-ThinItalic.ttf */; };
+		7DE378042B66D0E300D84B1F /* WorkSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377F22B66D0E300D84B1F /* WorkSans-BoldItalic.ttf */; };
+		7DE378052B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377F32B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf */; };
+		7DE378062B66D0E300D84B1F /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377F42B66D0E300D84B1F /* WorkSans-ExtraLight.ttf */; };
+		7DE3780C2B66E08900D84B1F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7DE3780B2B66E08900D84B1F /* IQKeyboardManagerSwift */; };
+		7DE3780E2B66E0EA00D84B1F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3780D2B66E0EA00D84B1F /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +113,6 @@
 		7D1A98802B610628008C674A /* RemoteRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteRepositoryTests.swift; sourceTree = "<group>"; };
 		7D1A98812B610628008C674A /* BreedsRemoteRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsRemoteRepositoryTests.swift; sourceTree = "<group>"; };
 		7D1A98842B610628008C674A /* CoreDataStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
-		7D1A98862B610628008C674A /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
-		7D1A98872B610628008C674A /* SceneDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		7D1A98892B610628008C674A /* RequestableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestableTests.swift; sourceTree = "<group>"; };
 		7D1A988A2B610628008C674A /* HelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
 		7D1A988B2B610628008C674A /* RequestableListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestableListTests.swift; sourceTree = "<group>"; };
@@ -99,8 +121,6 @@
 		7D1A98AF2B610A70008C674A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D27BD022B60E84500F67DEA /* BreedsFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreedsFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D27BD092B60E84800F67DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D27BD362B60E8DE00F67DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D27BD382B60E97500F67DEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D27BD3A2B60E98500F67DEA /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		7D27BD5B2B60EAB700F67DEA /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		7D27BD8D2B60ED2100F67DEA /* RootViewAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewAppearance.swift; sourceTree = "<group>"; };
@@ -122,6 +142,33 @@
 		7DE377B72B66458000D84B1F /* Inspectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectation.swift; sourceTree = "<group>"; };
 		7DE377C02B66549100D84B1F /* Models */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Models; path = ../Models; sourceTree = "<group>"; };
 		7DE377C42B66558D00D84B1F /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Infrastructure; path = ../Infrastructure; sourceTree = "<group>"; };
+		7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7DE377D12B668EEB00D84B1F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		7DE377D32B668F1200D84B1F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		7DE377D52B668FCE00D84B1F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7DE377DA2B66901700D84B1F /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		7DE377E02B66CCED00D84B1F /* BreedsFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsFinderApp.swift; sourceTree = "<group>"; };
+		7DE377E32B66D0E000D84B1F /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		7DE377E42B66D0E100D84B1F /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		7DE377E52B66D0E100D84B1F /* WorkSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		7DE377E62B66D0E100D84B1F /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		7DE377E72B66D0E100D84B1F /* WorkSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7DE377E82B66D0E100D84B1F /* WorkSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7DE377E92B66D0E100D84B1F /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		7DE377EA2B66D0E100D84B1F /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
+		7DE377EB2B66D0E100D84B1F /* WorkSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7DE377EC2B66D0E200D84B1F /* WorkSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7DE377ED2B66D0E200D84B1F /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7DE377EE2B66D0E200D84B1F /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		7DE377EF2B66D0E200D84B1F /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic.ttf"; sourceTree = "<group>"; };
+		7DE377F02B66D0E200D84B1F /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		7DE377F12B66D0E300D84B1F /* WorkSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7DE377F22B66D0E300D84B1F /* WorkSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7DE377F32B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7DE377F42B66D0E300D84B1F /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7DE3780D2B66E0EA00D84B1F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE3780C2B66E08900D84B1F /* IQKeyboardManagerSwift in Frameworks */,
 				7DE377B32B663BA200D84B1F /* Interactors in Frameworks */,
 				7DE377AF2B663B9C00D84B1F /* DataAccess in Frameworks */,
 				7DE377B52B663BA400D84B1F /* Models in Frameworks */,
@@ -147,13 +195,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D1A98662B610585008C674A /* Resource */ = {
+		7D1A98662B610585008C674A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7DE377C72B668D8300D84B1F /* Fonts */,
+				7D1A98AE2B610A70008C674A /* Preview Content */,
 				7D27BE3A2B60FF6E00F67DEA /* Info.plist */,
 				7D27BD092B60E84800F67DEA /* Assets.xcassets */,
 			);
-			path = Resource;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7D1A98672B610628008C674A /* AllTests */ = {
@@ -201,7 +251,6 @@
 				7D1A987B2B610628008C674A /* TestHelpers */,
 				7D1A987D2B610628008C674A /* Repositories */,
 				7D1A98822B610628008C674A /* DataAccess */,
-				7D1A98852B610628008C674A /* System */,
 				7D1A98882B610628008C674A /* Infrastructure */,
 				7D1A988C2B610628008C674A /* Services */,
 			);
@@ -265,15 +314,6 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
-		7D1A98852B610628008C674A /* System */ = {
-			isa = PBXGroup;
-			children = (
-				7D1A98862B610628008C674A /* AppDelegateTests.swift */,
-				7D1A98872B610628008C674A /* SceneDelegateTests.swift */,
-			);
-			path = System;
-			sourceTree = "<group>";
-		};
 		7D1A98882B610628008C674A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,24 +366,14 @@
 		7D27BD042B60E84500F67DEA /* BreedsFinder */ = {
 			isa = PBXGroup;
 			children = (
-				7D27BD342B60E8A400F67DEA /* System */,
+				7DE377E02B66CCED00D84B1F /* BreedsFinderApp.swift */,
+				7DE377D72B668FEB00D84B1F /* Utilities */,
 				7D27BD582B60EA9700F67DEA /* DI */,
 				7D27BD892B60ECE500F67DEA /* UI */,
-				7D1A98662B610585008C674A /* Resource */,
-				7D1A98AE2B610A70008C674A /* Preview Content */,
+				7D1A98662B610585008C674A /* Resources */,
 				7D1A98672B610628008C674A /* AllTests */,
 			);
 			path = BreedsFinder;
-			sourceTree = "<group>";
-		};
-		7D27BD342B60E8A400F67DEA /* System */ = {
-			isa = PBXGroup;
-			children = (
-				7D27BD362B60E8DE00F67DEA /* AppDelegate.swift */,
-				7D27BD382B60E97500F67DEA /* SceneDelegate.swift */,
-				7D27BD3A2B60E98500F67DEA /* AppEnvironment.swift */,
-			);
-			path = System;
 			sourceTree = "<group>";
 		};
 		7D27BD582B60EA9700F67DEA /* DI */ = {
@@ -357,7 +387,7 @@
 		7D27BD892B60ECE500F67DEA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				7DE377B92B6645C000D84B1F /* Helpers */,
+				7DE377B92B6645C000D84B1F /* Utilities */,
 				7D27BD8B2B60ED0D00F67DEA /* Components */,
 				7D27BD8C2B60ED1300F67DEA /* Screens */,
 			);
@@ -375,6 +405,7 @@
 		7D27BD8B2B60ED0D00F67DEA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7D27BD9B2B60EDB200F67DEA /* AppContentView */,
 				7D27BD8F2B60ED3100F67DEA /* ErrorView.swift */,
 				7D27BD912B60ED4100F67DEA /* ActivityIndicatorView.swift */,
 				7D27BD952B60ED6700F67DEA /* ImageView.swift */,
@@ -387,7 +418,6 @@
 		7D27BD8C2B60ED1300F67DEA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				7D27BD9B2B60EDB200F67DEA /* AppContentView */,
 				7D27BDA22B60EE1100F67DEA /* BreedsList */,
 				7D27BDAB2B60EEC600F67DEA /* BreedDetail */,
 			);
@@ -484,13 +514,86 @@
 			path = Inspectation;
 			sourceTree = "<group>";
 		};
-		7DE377B92B6645C000D84B1F /* Helpers */ = {
+		7DE377B92B6645C000D84B1F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				7DE377B62B66457200D84B1F /* Inspectation */,
 				7D27BD8A2B60ED0400F67DEA /* Appearance */,
 			);
-			path = Helpers;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7DE377C72B668D8300D84B1F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7DE377E22B66D08E00D84B1F /* WorkSans */,
+				7DE377C82B668D8300D84B1F /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7DE377C82B668D8300D84B1F /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */,
+				7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */,
+				7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		7DE377CF2B668E9D00D84B1F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7DE377D12B668EEB00D84B1F /* Strings.swift */,
+				7DE377D32B668F1200D84B1F /* Fonts.swift */,
+				7DE377D52B668FCE00D84B1F /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7DE377D72B668FEB00D84B1F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7D27BD3A2B60E98500F67DEA /* AppEnvironment.swift */,
+				7DE377D92B66900400D84B1F /* Extensions */,
+				7DE377CF2B668E9D00D84B1F /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7DE377D92B66900400D84B1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DE377DA2B66901700D84B1F /* Color+Ext.swift */,
+				7DE3780D2B66E0EA00D84B1F /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7DE377E22B66D08E00D84B1F /* WorkSans */ = {
+			isa = PBXGroup;
+			children = (
+				7DE377E52B66D0E100D84B1F /* WorkSans-Black.ttf */,
+				7DE377EC2B66D0E200D84B1F /* WorkSans-BlackItalic.ttf */,
+				7DE377E62B66D0E100D84B1F /* WorkSans-Bold.ttf */,
+				7DE377F22B66D0E300D84B1F /* WorkSans-BoldItalic.ttf */,
+				7DE377ED2B66D0E200D84B1F /* WorkSans-ExtraBold.ttf */,
+				7DE377F32B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf */,
+				7DE377F42B66D0E300D84B1F /* WorkSans-ExtraLight.ttf */,
+				7DE377E72B66D0E100D84B1F /* WorkSans-ExtraLightItalic.ttf */,
+				7DE377EF2B66D0E200D84B1F /* WorkSans-Italic.ttf */,
+				7DE377EA2B66D0E100D84B1F /* WorkSans-Light.ttf */,
+				7DE377EE2B66D0E200D84B1F /* WorkSans-LightItalic.ttf */,
+				7DE377E32B66D0E000D84B1F /* WorkSans-Medium.ttf */,
+				7DE377E82B66D0E100D84B1F /* WorkSans-MediumItalic.ttf */,
+				7DE377E42B66D0E100D84B1F /* WorkSans-Regular.ttf */,
+				7DE377F02B66D0E200D84B1F /* WorkSans-SemiBold.ttf */,
+				7DE377EB2B66D0E100D84B1F /* WorkSans-SemiBoldItalic.ttf */,
+				7DE377E92B66D0E100D84B1F /* WorkSans-Thin.ttf */,
+				7DE377F12B66D0E300D84B1F /* WorkSans-ThinItalic.ttf */,
+			);
+			path = WorkSans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +617,7 @@
 				7DE377B22B663BA200D84B1F /* Interactors */,
 				7DE377B42B663BA400D84B1F /* Models */,
 				7DE377C52B66566900D84B1F /* Infrastructure */,
+				7DE3780B2B66E08900D84B1F /* IQKeyboardManagerSwift */,
 			);
 			productName = BreedsFinder;
 			productReference = 7D27BD022B60E84500F67DEA /* BreedsFinder.app */;
@@ -571,6 +675,7 @@
 			mainGroup = 7D27BCF92B60E84500F67DEA;
 			packageReferences = (
 				7DE377C12B66550500D84B1F /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				7DE3780A2B66E08900D84B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 7D27BD032B60E84500F67DEA /* Products */;
 			projectDirPath = "";
@@ -587,8 +692,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE377F72B66D0E300D84B1F /* WorkSans-Black.ttf in Resources */,
+				7DE378022B66D0E300D84B1F /* WorkSans-SemiBold.ttf in Resources */,
 				7D1A98B02B610A70008C674A /* Preview Assets.xcassets in Resources */,
+				7DE377FA2B66D0E300D84B1F /* WorkSans-MediumItalic.ttf in Resources */,
+				7DE377F82B66D0E300D84B1F /* WorkSans-Bold.ttf in Resources */,
+				7DE378002B66D0E300D84B1F /* WorkSans-LightItalic.ttf in Resources */,
+				7DE377F52B66D0E300D84B1F /* WorkSans-Medium.ttf in Resources */,
+				7DE378042B66D0E300D84B1F /* WorkSans-BoldItalic.ttf in Resources */,
+				7DE377F92B66D0E300D84B1F /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				7DE377FE2B66D0E300D84B1F /* WorkSans-BlackItalic.ttf in Resources */,
 				7D27BD0A2B60E84800F67DEA /* Assets.xcassets in Resources */,
+				7DE377CE2B668D8300D84B1F /* Roboto-Bold.ttf in Resources */,
+				7DE378052B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf in Resources */,
+				7DE378012B66D0E300D84B1F /* WorkSans-Italic.ttf in Resources */,
+				7DE377CD2B668D8300D84B1F /* Roboto-Regular.ttf in Resources */,
+				7DE378032B66D0E300D84B1F /* WorkSans-ThinItalic.ttf in Resources */,
+				7DE377FD2B66D0E300D84B1F /* WorkSans-SemiBoldItalic.ttf in Resources */,
+				7DE377FB2B66D0E300D84B1F /* WorkSans-Thin.ttf in Resources */,
+				7DE377FF2B66D0E300D84B1F /* WorkSans-ExtraBold.ttf in Resources */,
+				7DE377CC2B668D8300D84B1F /* Roboto-Light.ttf in Resources */,
+				7DE377FC2B66D0E300D84B1F /* WorkSans-Light.ttf in Resources */,
+				7DE377F62B66D0E300D84B1F /* WorkSans-Regular.ttf in Resources */,
+				7DE378062B66D0E300D84B1F /* WorkSans-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,22 +732,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE377DB2B66901700D84B1F /* Color+Ext.swift in Sources */,
 				7DE377B82B66458000D84B1F /* Inspectation.swift in Sources */,
-				7D27BD372B60E8DE00F67DEA /* AppDelegate.swift in Sources */,
+				7DE377D62B668FCE00D84B1F /* Colors.swift in Sources */,
 				7D27BD982B60ED7C00F67DEA /* SearchBar.swift in Sources */,
 				7D27BD922B60ED4100F67DEA /* ActivityIndicatorView.swift in Sources */,
 				7D27BDA12B60EDD800F67DEA /* AppContentViewModel.swift in Sources */,
 				7D27BE0B2B60F83C00F67DEA /* BreedCell.swift in Sources */,
-				7D27BD392B60E97500F67DEA /* SceneDelegate.swift in Sources */,
 				7D27BDAF2B60EEE300F67DEA /* BreedDetailView.swift in Sources */,
 				7D27BD9A2B60ED9400F67DEA /* ContentView.swift in Sources */,
 				7D27BD3B2B60E98500F67DEA /* AppEnvironment.swift in Sources */,
+				7DE377E12B66CCED00D84B1F /* BreedsFinderApp.swift in Sources */,
+				7DE377D22B668EEB00D84B1F /* Strings.swift in Sources */,
 				7D27BD9F2B60EDC900F67DEA /* AppContentView.swift in Sources */,
 				7D27BD8E2B60ED2100F67DEA /* RootViewAppearance.swift in Sources */,
+				7DE3780E2B66E0EA00D84B1F /* View+Ext.swift in Sources */,
 				7D27BD902B60ED3100F67DEA /* ErrorView.swift in Sources */,
 				7D27BDA82B60EE6F00F67DEA /* BreedsListView.swift in Sources */,
 				7D27BD962B60ED6700F67DEA /* ImageView.swift in Sources */,
 				7D27BD5C2B60EAB700F67DEA /* DIContainer.swift in Sources */,
+				7DE377D42B668F1200D84B1F /* Fonts.swift in Sources */,
 				7D27BDAA2B60EE9900F67DEA /* BreedsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,7 +762,6 @@
 			files = (
 				7D1A989D2B610629008C674A /* ImageRemoteRepositoryTests.swift in Sources */,
 				7D1A98992B610629008C674A /* MockedServices.swift in Sources */,
-				7D1A98A32B610629008C674A /* SceneDelegateTests.swift in Sources */,
 				7D1A98962B610628008C674A /* RequestMocking.swift in Sources */,
 				7D1A98A82B610629008C674A /* BreedsServiceTests.swift in Sources */,
 				7D1A989E2B610629008C674A /* BreedsDataBaseRepositoryTests.swift in Sources */,
@@ -652,7 +781,6 @@
 				7D1A988F2B610628008C674A /* BreedsListViewTests.swift in Sources */,
 				7D1A989C2B610629008C674A /* TestHelpers.swift in Sources */,
 				7D1A989B2B610629008C674A /* MockedRemoteRepositories.swift in Sources */,
-				7D1A98A22B610629008C674A /* AppDelegateTests.swift in Sources */,
 				7D1A98942B610628008C674A /* ViewPreviewsTests.swift in Sources */,
 				7D1A98972B610629008C674A /* Mock.swift in Sources */,
 				7D1A989A2B610629008C674A /* MockedPersistentStore.swift in Sources */,
@@ -794,7 +922,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BreedsFinder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BreedsFinder/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5RE77UD6;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
@@ -827,7 +955,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BreedsFinder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BreedsFinder/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5RE77UD6;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
@@ -930,6 +1058,14 @@
 				kind = branch;
 			};
 		};
+		7DE3780A2B66E08900D84B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = 7.0.0;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -953,6 +1089,11 @@
 		7DE377C52B66566900D84B1F /* Infrastructure */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Infrastructure;
+		};
+		7DE3780B2B66E08900D84B1F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DE3780A2B66E08900D84B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
