@@ -14,16 +14,32 @@ public extension Breed {
     
     @discardableResult
     func store(in context: NSManagedObjectContext) -> BreedMO? {
-        guard let breedMO = BreedMO.insertNew(in: context)
-        else { return nil }
-        breedMO.name = name
-        breedMO.id = id
-        breedMO.temperament = temperament
-        breedMO.catExplaination = catExplaination
-        breedMO.energyLevel = Int32(energyLevel)
-        breedMO.isHairless = Int32(isHairless)
-        breedMO.imageUrl = imageUrl
-        return breedMO
+        if !self.isExistedInDataBase(in: context) {
+            guard let breedMO = BreedMO.insertNew(in: context)
+            else { return nil }
+            breedMO.name = name
+            breedMO.id = id
+            breedMO.temperament = temperament
+            breedMO.catExplaination = catExplaination
+            breedMO.energyLevel = Int32(energyLevel)
+            breedMO.isHairless = Int32(isHairless)
+            breedMO.imageUrl = imageUrl
+            return breedMO
+        }
+        
+        return nil
+    }
+    
+    func isExistedInDataBase(in context: NSManagedObjectContext) -> Bool {
+        let request = NSFetchRequest<NSFetchRequestResult>.init(entityName: "Breed")
+        request.predicate = .init(format: "id == %@", self.id)
+        do {
+            let count = try context.count(for: request)
+            return count > 0
+        }
+        catch {
+            return false
+        }
     }
     
     init?(managedObject: BreedMO) {

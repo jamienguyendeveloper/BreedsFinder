@@ -51,8 +51,8 @@ public struct Breed: Codable, Equatable, Identifiable {
                 energyLevel: Int,
                 isHairless: Int,
                 imageUrl: String?) {
-        self.name = name
         self.id = id
+        self.name = name
         self.catExplaination = explaination
         self.energyLevel = energyLevel
         self.temperament = temperament
