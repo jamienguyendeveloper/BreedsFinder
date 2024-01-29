@@ -9,7 +9,7 @@ import XCTest
 import ViewInspector
 @testable import BreedsFinder
 
-final class ContentViewTests: XCTestCase {
+final class AppContentViewTests: XCTestCase {
 
     func test_content_for_tests() throws {
         let viewModel = AppContentView.ViewModel(container: .defaultValue, isRunningTests: true)

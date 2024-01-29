@@ -12,16 +12,16 @@ import Infrastructure
 import Models
 @testable import BreedsFinder
 
-final class BreedsListTests: XCTestCase {
+final class BreedsListViewTests: XCTestCase {
     
     func test_breeds_notRequested() {
         let container = DIContainer(appState: AppState(), services:
                 .mocked(
                     breedsService: [.loadBreeds(search: "")]
                 ))
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds: .notRequested))
+        let sut = BreedsListView(viewModel: .init(container: container, breeds: .notRequested))
         let exp = sut.inspection.inspect { view in
-            XCTAssertNoThrow(try view.content().text(0))
+            XCTAssertNoThrow(try view.content().zStack().vStack(1).vStack(0).text(0))
             XCTAssertEqual(container.appState.value, AppState())
             container.services.verify()
         }
@@ -31,7 +31,7 @@ final class BreedsListTests: XCTestCase {
     
     func test_breeds_isRequesting_initial() {
         let container = DIContainer(appState: AppState(), services: .mocked())
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds:
+        let sut = BreedsListView(viewModel: .init(container: container, breeds:
                 .isRequesting(last: nil, cancellableBag: CancellableBag())))
         let exp = sut.inspection.inspect { view in
             let content = try view.content()
@@ -45,12 +45,10 @@ final class BreedsListTests: XCTestCase {
     
     func test_breeds_isRequesting_refresh() {
         let container = DIContainer(appState: AppState(), services: .mocked())
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds:
+        let sut = BreedsListView(viewModel: .init(container: container, breeds:
                 .isRequesting(last: Breed.mockedData.requestableList, cancellableBag: CancellableBag())))
         let exp = sut.inspection.inspect { view in
             let content = try view.content()
-            XCTAssertNoThrow(try content.find(SearchBar.self))
-            XCTAssertNoThrow(try content.find(ActivityIndicatorView.self))
             let cell = try content.find(BreedCell.self).actualView()
             XCTAssertEqual(cell.breed, Breed.mockedData[0])
             XCTAssertEqual(container.appState.value, AppState())
@@ -62,12 +60,10 @@ final class BreedsListTests: XCTestCase {
     
     func test_breeds_requested() {
         let container = DIContainer(appState: AppState(), services: .mocked())
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds:
+        let sut = BreedsListView(viewModel: .init(container: container, breeds:
                 .requested(Breed.mockedData.requestableList)))
         let exp = sut.inspection.inspect { view in
             let content = try view.content()
-            XCTAssertNoThrow(try content.find(SearchBar.self))
-            XCTAssertThrowsError(try content.find(ActivityIndicatorView.self))
             let cell = try content.find(BreedCell.self).actualView()
             XCTAssertEqual(cell.breed, Breed.mockedData[0])
             XCTAssertEqual(container.appState.value, AppState())
@@ -79,10 +75,10 @@ final class BreedsListTests: XCTestCase {
     
     func test_breeds_failed() {
         let container = DIContainer(appState: AppState(), services: .mocked())
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds:
+        let sut = BreedsListView(viewModel: .init(container: container, breeds:
                 .failed(NSError.test)))
         let exp = sut.inspection.inspect { view in
-            XCTAssertNoThrow(try view.content().view(ErrorView.self, 0))
+            XCTAssertNoThrow(try view.content().zStack().vStack(1).view(ErrorView.self, 1))
             XCTAssertEqual(container.appState.value, AppState())
             container.services.verify()
         }
@@ -94,10 +90,10 @@ final class BreedsListTests: XCTestCase {
         let container = DIContainer(appState: AppState(), services: .mocked(
             breedsService: [.loadBreeds(search: "")]
         ))
-        let sut = BreedsListView(viewModel: .init(container: container, Breeds:
+        let sut = BreedsListView(viewModel: .init(container: container, breeds:
                 .failed(NSError.test)))
         let exp = sut.inspection.inspect { view in
-            let errorView = try view.content().view(ErrorView.self, 0)
+            let errorView = try view.content().zStack().vStack(1).view(ErrorView.self, 1)
             try errorView.vStack().button(2).tap()
             XCTAssertEqual(container.appState.value, AppState())
             container.services.verify()

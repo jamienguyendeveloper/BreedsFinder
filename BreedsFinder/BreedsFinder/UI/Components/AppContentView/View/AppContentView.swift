@@ -13,7 +13,7 @@ struct AppContentView: View {
     @ObservedObject private(set) var viewModel: ViewModel
     
     var body: some View {
-        VStack {
+        Group {
             if viewModel.isForTests {
                 Text("Tests")
             } else {

@@ -26,9 +26,9 @@ extension BreedsListView {
         let container: DIContainer
         private var cancellableBag = CancellableBag()
         
-        init(container: DIContainer, Breeds: Requestable<RequestableList<Breed>> = .notRequested) {
+        init(container: DIContainer, breeds: Requestable<RequestableList<Breed>> = .notRequested) {
             self.container = container
-            _breeds = .init(initialValue: Breeds)
+            _breeds = .init(initialValue: breeds)
         }
         
         // MARK: Side Effects

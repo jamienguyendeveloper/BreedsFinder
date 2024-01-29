@@ -18,12 +18,12 @@ struct BreedsListView: View {
     @FocusState private var isTextFieldFocused: Bool
     
     var body: some View {
-        NavigationView {
-            self.content
-            .onReceive(inspection.notice) {
-                self.inspection.visit(self, $0)
+        GeometryReader { geometry in
+            NavigationView {
+                self.content
             }
-        }.accentColor(.white)
+        }
+        .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }
     
     @ViewBuilder private var content: some View {
@@ -119,24 +119,24 @@ private extension BreedsListView {
                     ActivityIndicatorView().padding()
                     Spacer()
                 }
-            } else {
-                ScrollView {
-                    VStack(spacing: 20) {
-                        ForEach(0..<breeds.count, id:\.self) { idx in
-                            let breed = breeds[idx]
-                            NavigationLink {
-                                BreedDetailView(breed: breed)
-                            } label: {
-                                BreedCell(breed: breed)
-                                    .padding(.leading, 20)
-                                    .padding(.trailing, 20)
-                                    .cornerRadius(20)
-                            }
-
-                        }
-                    }
-                }.background(Colors.main)
             }
+            
+            ScrollView {
+                VStack(spacing: 20) {
+                    ForEach(0..<breeds.count, id:\.self) { idx in
+                        let breed = breeds[idx]
+                        NavigationLink {
+                            BreedDetailView(breed: breed)
+                        } label: {
+                            BreedCell(breed: breed)
+                                .padding(.leading, 20)
+                                .padding(.trailing, 20)
+                                .cornerRadius(20)
+                        }
+
+                    }
+                }
+            }.background(Colors.main)
         }
     }
 }

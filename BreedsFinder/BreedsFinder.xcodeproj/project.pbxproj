@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D1A988F2B610628008C674A /* BreedsListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986A2B610628008C674A /* BreedsListViewTests.swift */; };
 		7D1A98902B610628008C674A /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986B2B610628008C674A /* ContentViewTests.swift */; };
-		7D1A98912B610628008C674A /* CountryDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986C2B610628008C674A /* CountryDetailsTests.swift */; };
 		7D1A98922B610628008C674A /* ImageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986E2B610628008C674A /* ImageViewTest.swift */; };
-		7D1A98932B610628008C674A /* SearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986F2B610628008C674A /* SearchBarTests.swift */; };
 		7D1A98942B610628008C674A /* ViewPreviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98702B610628008C674A /* ViewPreviewsTests.swift */; };
 		7D1A98952B610628008C674A /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98742B610628008C674A /* MockedResponse.swift */; };
 		7D1A98962B610628008C674A /* RequestMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98752B610628008C674A /* RequestMocking.swift */; };
@@ -39,7 +37,6 @@
 		7D27BD902B60ED3100F67DEA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD8F2B60ED3100F67DEA /* ErrorView.swift */; };
 		7D27BD922B60ED4100F67DEA /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD912B60ED4100F67DEA /* ActivityIndicatorView.swift */; };
 		7D27BD962B60ED6700F67DEA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD952B60ED6700F67DEA /* ImageView.swift */; };
-		7D27BD982B60ED7C00F67DEA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD972B60ED7C00F67DEA /* SearchBar.swift */; };
 		7D27BD9A2B60ED9400F67DEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD992B60ED9400F67DEA /* ContentView.swift */; };
 		7D27BD9F2B60EDC900F67DEA /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BD9E2B60EDC900F67DEA /* AppContentView.swift */; };
 		7D27BDA12B60EDD800F67DEA /* AppContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27BDA02B60EDD800F67DEA /* AppContentViewModel.swift */; };
@@ -53,9 +50,6 @@
 		7DE377B82B66458000D84B1F /* Inspectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377B72B66458000D84B1F /* Inspectation.swift */; };
 		7DE377C32B66550500D84B1F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 7DE377C22B66550500D84B1F /* ViewInspector */; };
 		7DE377C62B66566900D84B1F /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = 7DE377C52B66566900D84B1F /* Infrastructure */; };
-		7DE377CC2B668D8300D84B1F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */; };
-		7DE377CD2B668D8300D84B1F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */; };
-		7DE377CE2B668D8300D84B1F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */; };
 		7DE377D22B668EEB00D84B1F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D12B668EEB00D84B1F /* Strings.swift */; };
 		7DE377D42B668F1200D84B1F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D32B668F1200D84B1F /* Fonts.swift */; };
 		7DE377D62B668FCE00D84B1F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE377D52B668FCE00D84B1F /* Colors.swift */; };
@@ -96,9 +90,7 @@
 /* Begin PBXFileReference section */
 		7D1A986A2B610628008C674A /* BreedsListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsListViewTests.swift; sourceTree = "<group>"; };
 		7D1A986B2B610628008C674A /* ContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
-		7D1A986C2B610628008C674A /* CountryDetailsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsTests.swift; sourceTree = "<group>"; };
 		7D1A986E2B610628008C674A /* ImageViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewTest.swift; sourceTree = "<group>"; };
-		7D1A986F2B610628008C674A /* SearchBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTests.swift; sourceTree = "<group>"; };
 		7D1A98702B610628008C674A /* ViewPreviewsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPreviewsTests.swift; sourceTree = "<group>"; };
 		7D1A98742B610628008C674A /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
 		7D1A98752B610628008C674A /* RequestMocking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMocking.swift; sourceTree = "<group>"; };
@@ -127,7 +119,6 @@
 		7D27BD8F2B60ED3100F67DEA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		7D27BD912B60ED4100F67DEA /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		7D27BD952B60ED6700F67DEA /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		7D27BD972B60ED7C00F67DEA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		7D27BD992B60ED9400F67DEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D27BD9E2B60EDC900F67DEA /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
 		7D27BDA02B60EDD800F67DEA /* AppContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentViewModel.swift; sourceTree = "<group>"; };
@@ -142,9 +133,6 @@
 		7DE377B72B66458000D84B1F /* Inspectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectation.swift; sourceTree = "<group>"; };
 		7DE377C02B66549100D84B1F /* Models */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Models; path = ../Models; sourceTree = "<group>"; };
 		7DE377C42B66558D00D84B1F /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Infrastructure; path = ../Infrastructure; sourceTree = "<group>"; };
-		7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		7DE377D12B668EEB00D84B1F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		7DE377D32B668F1200D84B1F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		7DE377D52B668FCE00D84B1F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -230,7 +218,6 @@
 			children = (
 				7D1A986A2B610628008C674A /* BreedsListViewTests.swift */,
 				7D1A986B2B610628008C674A /* ContentViewTests.swift */,
-				7D1A986C2B610628008C674A /* CountryDetailsTests.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -239,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				7D1A986E2B610628008C674A /* ImageViewTest.swift */,
-				7D1A986F2B610628008C674A /* SearchBarTests.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -409,7 +395,6 @@
 				7D27BD8F2B60ED3100F67DEA /* ErrorView.swift */,
 				7D27BD912B60ED4100F67DEA /* ActivityIndicatorView.swift */,
 				7D27BD952B60ED6700F67DEA /* ImageView.swift */,
-				7D27BD972B60ED7C00F67DEA /* SearchBar.swift */,
 				7D27BD992B60ED9400F67DEA /* ContentView.swift */,
 			);
 			path = Components;
@@ -527,19 +512,8 @@
 			isa = PBXGroup;
 			children = (
 				7DE377E22B66D08E00D84B1F /* WorkSans */,
-				7DE377C82B668D8300D84B1F /* Roboto */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		7DE377C82B668D8300D84B1F /* Roboto */ = {
-			isa = PBXGroup;
-			children = (
-				7DE377C92B668D8300D84B1F /* Roboto-Light.ttf */,
-				7DE377CA2B668D8300D84B1F /* Roboto-Regular.ttf */,
-				7DE377CB2B668D8300D84B1F /* Roboto-Bold.ttf */,
-			);
-			path = Roboto;
 			sourceTree = "<group>";
 		};
 		7DE377CF2B668E9D00D84B1F /* Constants */ = {
@@ -703,15 +677,12 @@
 				7DE377F92B66D0E300D84B1F /* WorkSans-ExtraLightItalic.ttf in Resources */,
 				7DE377FE2B66D0E300D84B1F /* WorkSans-BlackItalic.ttf in Resources */,
 				7D27BD0A2B60E84800F67DEA /* Assets.xcassets in Resources */,
-				7DE377CE2B668D8300D84B1F /* Roboto-Bold.ttf in Resources */,
 				7DE378052B66D0E300D84B1F /* WorkSans-ExtraBoldItalic.ttf in Resources */,
 				7DE378012B66D0E300D84B1F /* WorkSans-Italic.ttf in Resources */,
-				7DE377CD2B668D8300D84B1F /* Roboto-Regular.ttf in Resources */,
 				7DE378032B66D0E300D84B1F /* WorkSans-ThinItalic.ttf in Resources */,
 				7DE377FD2B66D0E300D84B1F /* WorkSans-SemiBoldItalic.ttf in Resources */,
 				7DE377FB2B66D0E300D84B1F /* WorkSans-Thin.ttf in Resources */,
 				7DE377FF2B66D0E300D84B1F /* WorkSans-ExtraBold.ttf in Resources */,
-				7DE377CC2B668D8300D84B1F /* Roboto-Light.ttf in Resources */,
 				7DE377FC2B66D0E300D84B1F /* WorkSans-Light.ttf in Resources */,
 				7DE377F62B66D0E300D84B1F /* WorkSans-Regular.ttf in Resources */,
 				7DE378062B66D0E300D84B1F /* WorkSans-ExtraLight.ttf in Resources */,
@@ -735,7 +706,6 @@
 				7DE377DB2B66901700D84B1F /* Color+Ext.swift in Sources */,
 				7DE377B82B66458000D84B1F /* Inspectation.swift in Sources */,
 				7DE377D62B668FCE00D84B1F /* Colors.swift in Sources */,
-				7D27BD982B60ED7C00F67DEA /* SearchBar.swift in Sources */,
 				7D27BD922B60ED4100F67DEA /* ActivityIndicatorView.swift in Sources */,
 				7D27BDA12B60EDD800F67DEA /* AppContentViewModel.swift in Sources */,
 				7D27BE0B2B60F83C00F67DEA /* BreedCell.swift in Sources */,
@@ -771,9 +741,7 @@
 				7D1A98A52B610629008C674A /* HelpersTests.swift in Sources */,
 				7D1A989F2B610629008C674A /* RemoteRepositoryTests.swift in Sources */,
 				7D1A98A62B610629008C674A /* RequestableListTests.swift in Sources */,
-				7D1A98912B610628008C674A /* CountryDetailsTests.swift in Sources */,
 				7D1A98A12B610629008C674A /* CoreDataStackTests.swift in Sources */,
-				7D1A98932B610628008C674A /* SearchBarTests.swift in Sources */,
 				7D1A98A02B610629008C674A /* BreedsRemoteRepositoryTests.swift in Sources */,
 				7D1A98902B610628008C674A /* ContentViewTests.swift in Sources */,
 				7D1A98952B610628008C674A /* MockedResponse.swift in Sources */,
