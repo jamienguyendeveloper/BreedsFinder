@@ -21,7 +21,7 @@ struct BreedsListView: View {
         GeometryReader { geometry in
             NavigationView {
                 self.content
-            }
+            }.accentColor(.white)
         }
         .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }

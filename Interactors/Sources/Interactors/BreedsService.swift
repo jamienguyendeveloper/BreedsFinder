@@ -14,16 +14,3 @@ public protocol BreedsService {
     func refreshBreeds() -> AnyPublisher<Void, Error>
     func load(breeds: RequestableSubject<RequestableList<Breed>>, search: String)
 }
-
-public struct StubBreedsService: BreedsService {
-    
-    public init() {
-    }
-    
-    public func refreshBreeds() -> AnyPublisher<Void, Error> {
-        return Just<Void>.withErrorType(Error.self)
-    }
-    
-    public func load(breeds: RequestableSubject<RequestableList<Breed>>, search: String) {
-    }
-}

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D1A988F2B610628008C674A /* BreedsListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986A2B610628008C674A /* BreedsListViewTests.swift */; };
-		7D1A98902B610628008C674A /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986B2B610628008C674A /* ContentViewTests.swift */; };
+		7D1A98902B610628008C674A /* AppContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986B2B610628008C674A /* AppContentViewTests.swift */; };
 		7D1A98922B610628008C674A /* ImageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A986E2B610628008C674A /* ImageViewTest.swift */; };
 		7D1A98942B610628008C674A /* ViewPreviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98702B610628008C674A /* ViewPreviewsTests.swift */; };
 		7D1A98952B610628008C674A /* MockedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A98742B610628008C674A /* MockedResponse.swift */; };
@@ -89,7 +89,7 @@
 
 /* Begin PBXFileReference section */
 		7D1A986A2B610628008C674A /* BreedsListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsListViewTests.swift; sourceTree = "<group>"; };
-		7D1A986B2B610628008C674A /* ContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
+		7D1A986B2B610628008C674A /* AppContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContentViewTests.swift; sourceTree = "<group>"; };
 		7D1A986E2B610628008C674A /* ImageViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewTest.swift; sourceTree = "<group>"; };
 		7D1A98702B610628008C674A /* ViewPreviewsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPreviewsTests.swift; sourceTree = "<group>"; };
 		7D1A98742B610628008C674A /* MockedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedResponse.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				7D1A986A2B610628008C674A /* BreedsListViewTests.swift */,
-				7D1A986B2B610628008C674A /* ContentViewTests.swift */,
+				7D1A986B2B610628008C674A /* AppContentViewTests.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -233,11 +233,9 @@
 		7D1A98712B610628008C674A /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D1A98722B610628008C674A /* Mocks */,
 				7D1A987B2B610628008C674A /* TestHelpers */,
-				7D1A987D2B610628008C674A /* Repositories */,
-				7D1A98822B610628008C674A /* DataAccess */,
 				7D1A98882B610628008C674A /* Infrastructure */,
+				7D1A98822B610628008C674A /* DataAccess */,
 				7D1A988C2B610628008C674A /* Services */,
 			);
 			path = UnitTests;
@@ -268,7 +266,9 @@
 		7D1A987B2B610628008C674A /* TestHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				7D1A98722B610628008C674A /* Mocks */,
 				7D1A987C2B610628008C674A /* TestHelpers.swift */,
+				7D1A988A2B610628008C674A /* HelpersTests.swift */,
 			);
 			path = TestHelpers;
 			sourceTree = "<group>";
@@ -276,10 +276,10 @@
 		7D1A987D2B610628008C674A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				7D1A987E2B610628008C674A /* ImageRemoteRepositoryTests.swift */,
 				7D1A987F2B610628008C674A /* BreedsDataBaseRepositoryTests.swift */,
-				7D1A98802B610628008C674A /* RemoteRepositoryTests.swift */,
 				7D1A98812B610628008C674A /* BreedsRemoteRepositoryTests.swift */,
+				7D1A987E2B610628008C674A /* ImageRemoteRepositoryTests.swift */,
+				7D1A98802B610628008C674A /* RemoteRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -287,6 +287,7 @@
 		7D1A98822B610628008C674A /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				7D1A987D2B610628008C674A /* Repositories */,
 				7D1A98832B610628008C674A /* Persistence */,
 			);
 			path = DataAccess;
@@ -303,9 +304,8 @@
 		7D1A98882B610628008C674A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				7D1A98892B610628008C674A /* RequestableTests.swift */,
-				7D1A988A2B610628008C674A /* HelpersTests.swift */,
 				7D1A988B2B610628008C674A /* RequestableListTests.swift */,
+				7D1A98892B610628008C674A /* RequestableTests.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -743,7 +743,7 @@
 				7D1A98A62B610629008C674A /* RequestableListTests.swift in Sources */,
 				7D1A98A12B610629008C674A /* CoreDataStackTests.swift in Sources */,
 				7D1A98A02B610629008C674A /* BreedsRemoteRepositoryTests.swift in Sources */,
-				7D1A98902B610628008C674A /* ContentViewTests.swift in Sources */,
+				7D1A98902B610628008C674A /* AppContentViewTests.swift in Sources */,
 				7D1A98952B610628008C674A /* MockedResponse.swift in Sources */,
 				7D1A98982B610629008C674A /* MockedDataBaseRepositories.swift in Sources */,
 				7D1A988F2B610628008C674A /* BreedsListViewTests.swift in Sources */,
@@ -898,6 +898,7 @@
 				INFOPLIST_FILE = BreedsFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -931,6 +932,7 @@
 				INFOPLIST_FILE = BreedsFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -44,7 +44,7 @@ public extension Publisher where Output == URLSession.DataTaskPublisher.Output {
 }
 
 public extension Publisher where Output == URLSession.DataTaskPublisher.Output {
-    public func requestJSON<Value>(httpCodes: HTTPCodes) -> AnyPublisher<Value, Error> where Value: Decodable {
+    func requestJSON<Value>(httpCodes: HTTPCodes) -> AnyPublisher<Value, Error> where Value: Decodable {
         return requestData(httpCodes: httpCodes)
             .decode(type: Value.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)

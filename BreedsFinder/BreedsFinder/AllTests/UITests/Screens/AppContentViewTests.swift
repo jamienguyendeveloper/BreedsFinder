@@ -1,5 +1,5 @@
 //
-//  ContentViewTests.swift
+//  AppContentViewTests.swift
 //  BreedsFinderUITests
 //
 //  Created by Jamie on 24/01/2024.

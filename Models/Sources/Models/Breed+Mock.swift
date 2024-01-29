@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Breed {
-    public static let mockedData: [Breed] = [
+    static let mockedData: [Breed] = [
         Breed(name: "Abyssinian",
               id: "abys",
               explaination: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",

@@ -12,10 +12,6 @@ struct Fonts {
         return Font.custom("WorkSans-Regular", size: size)
     }
     
-    static func light(_ size: CGFloat) -> Font? {
-        return Font.custom("WorkSans-Light", size: size)
-    }
-    
     static func bold(_ size: CGFloat) -> Font? {
         return Font.custom("WorkSans-Bold", size: size)
     }
